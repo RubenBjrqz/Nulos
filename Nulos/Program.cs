@@ -17,6 +17,10 @@ namespace Nulos
             Console.WriteLine("Marca: " + miCarro.Marca);
             Console.WriteLine("KM: " + miCarro.Kilometraje);
 
+            miCarro.DueñoCarro = new Dueño();
+            miCarro.DueñoCarro.Nombre = "Pedro";
+            miCarro.DueñoCarro = null;
+
             if(miCarro.DueñoCarro != null)
             {
                 Console.WriteLine("Dueño: " + miCarro.DueñoCarro.Nombre);
